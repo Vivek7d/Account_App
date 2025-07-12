@@ -14,7 +14,6 @@ public class BankAccountTest {
             account.deposit(500);
             account.withdraw(200);
             
-            // This will throw NegativeAmountException
             account.deposit(-100);
 
         } catch (NegativeAmountException | InsufficientFundsException e) {
