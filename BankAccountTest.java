@@ -21,7 +21,6 @@ public class BankAccountTest {
         }
 
         try {
-            // This will throw InsufficientFundsException
             account.withdraw(2000);
         } catch (NegativeAmountException | InsufficientFundsException e) {
             System.out.println("Error: " + e.getMessage());
